@@ -1,5 +1,5 @@
 //
-//  ModelXML.swift
+//  CurrencyList+Presenter.swift
 //  r3pi
 //
 //  Created by Nazar on 30/07/2017.

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import SCLAlertView
+//import SCLAlertView
 
 class MyAlertView {
     

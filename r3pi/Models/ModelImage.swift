@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import RealmSwift
+//import RealmSwift
 
 
 /*
@@ -15,8 +15,9 @@ import RealmSwift
  Realm interface is much cleaner and easier to understand
 */
 
-class ModelImage: Object
+class ModelImage: NSObject
 {
+    /*
     dynamic var id          = ""
     dynamic var url         = ""
     dynamic var source_url  = ""
@@ -46,8 +47,9 @@ class ModelImage: Object
         self.localID = ""
         self.isFavorite = false
     }
+    */
 }
-
+/*
 extension ModelImage {
     
     // get all favorite images saved on disk
@@ -56,3 +58,4 @@ extension ModelImage {
         return [ModelImage]()
     }
 }
+*/

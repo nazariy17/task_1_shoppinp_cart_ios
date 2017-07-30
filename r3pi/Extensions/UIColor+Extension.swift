@@ -15,8 +15,8 @@ import UIKit
 
 extension UIColor
 {
-    class func giniColor() -> UIColor
+    class func r3piOrange() -> UIColor
     {
-        return UIColor(red:0.0/255.0, green:158.0/255.0, blue:220.0/255.0, alpha:1.00)
+        return UIColor(red:233.0/255.0, green:101.0/255.0, blue:36.0/255.0, alpha:1.00)
     }
 }

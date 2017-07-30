@@ -1,5 +1,5 @@
 //
-//  CheckoutViewController.swift
+//  CurrencyListViewController.swift
 //  r3pi
 //
 //  Created by Nazar on 30/07/2017.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-class CheckoutViewController: UIViewController {
+class CurrencyListViewController: UIViewController {
     
-    let reuseIdentifier = "CheckoutTableViewCell"
+    let reuseIdentifier = "CurrencyTableViewCell"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,16 +25,14 @@ class CheckoutViewController: UIViewController {
 
 }
 
-
-
-extension CheckoutViewController: UITableViewDataSource, UITableViewDelegate {
+extension CurrencyListViewController: UITableViewDataSource, UITableViewDelegate {
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! CheckoutTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! CurrencyTableViewCell
         //let index = (indexPath as NSIndexPath).row
         
         return cell
@@ -42,16 +40,16 @@ extension CheckoutViewController: UITableViewDataSource, UITableViewDelegate {
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         /*
-        selectedRowIndex = (indexPath as NSIndexPath).row
-        selectionAction?(selectedRowIndex!, dataSource[selectedRowIndex!])
-        
-        if let _ = anchorView as? UIBarButtonItem {
-            // DropDown's from UIBarButtonItem are menus so we deselect the selected menu right after selection
-            deselectRow(at: selectedRowIndex)
-        }
-        
-        hide()
-        */
+         selectedRowIndex = (indexPath as NSIndexPath).row
+         selectionAction?(selectedRowIndex!, dataSource[selectedRowIndex!])
+         
+         if let _ = anchorView as? UIBarButtonItem {
+         // DropDown's from UIBarButtonItem are menus so we deselect the selected menu right after selection
+         deselectRow(at: selectedRowIndex)
+         }
+         
+         hide()
+         */
     }
     
 }
