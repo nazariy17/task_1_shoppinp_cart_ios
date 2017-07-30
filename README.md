@@ -20,7 +20,8 @@
 
 
 ***** Description *****
-The app is based on Viper Arquitecture. Besides VIPER, app has delegates, notifications, singleton pattern as well.
+The app is based on Viper Arquitecture. Not an original version of VIPER (I think the original one can cause more harm than good) but still, Interactor and Presnter are there and we still have SOLID approach.
+Besides VIPER, app has delegates, notifications, singleton pattern as well.
 The data is saved via Models Classes and has a limited life cycle (only persist while app is running)
 For Internet connection app counts on <+++>
 
@@ -42,8 +43,9 @@ Some animation were used to create "fluid" effect and to enrich the user experie
 
 
 ***** Known issue *****
-- App won't save the data in persistence way
+- App won't save the data in correct persistence way (using Realm or CD) - for this task I will use NSUserDefaults because of complexity and deadline. In normal comercial project I would go with REALM
 - The images of products are saved as an image asset, so in order to add more products besides we need to add it to the plist we need to add the image. This can be easily changed to cloud images.
+- I don't use any product ID since they make no sense with this task.
 
 
 

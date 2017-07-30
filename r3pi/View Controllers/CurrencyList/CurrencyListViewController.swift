@@ -10,6 +10,9 @@ import UIKit
 
 class CurrencyListViewController: UIViewController {
     
+    
+    @IBOutlet var tableView: UITableView!
+    
     let reuseIdentifier = "CurrencyTableViewCell"
 
     override func viewDidLoad() {
@@ -22,6 +25,16 @@ class CurrencyListViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    @IBAction func doneWindowAction(_ sender: UIButton) {
+    }
+    
+    
+    @IBAction func closeWindowAction(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 
 }
 

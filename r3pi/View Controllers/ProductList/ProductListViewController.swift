@@ -10,6 +10,10 @@ import UIKit
 
 class ProductListViewController: UIViewController {
     
+    @IBOutlet var totalPurchaseQuantityLbl: UILabel!
+    @IBOutlet var totalPurchaseCostLbl: UILabel!
+    @IBOutlet var checkoutBtn: UIButton!
+    
     let reuseIdentifier = "ProductCollectionViewCell"
 
     override func viewDidLoad() {
@@ -47,6 +51,11 @@ extension ProductListViewController: UICollectionViewDelegate, UICollectionViewD
         // get a reference to our storyboard cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! ProductCollectionViewCell
         //cell.delegate = self
+        
+        
+        cell.layer.borderWidth = 1.0
+        cell.layer.borderColor = UIColor.lightGray.cgColor
+        cell.layer.cornerRadius = 5
         
         /*
         //we need to check, if this is last cell than we should add button and hide the image.

@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+extension CurrencyListViewController
+{
+    //in the presenter we only "Adapt/Transform/Prepare" data before send it to the view
+    //No business logic shoult be here!!!
+    
+    //in our case, this file will have a dumb look since it's so simple that we will just passing data, nothing more!
+    
+    func preFetchCurrencyData()
+    {
+        
+    }
+}

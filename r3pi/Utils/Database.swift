@@ -1,7 +1,8 @@
 //
 //  Database.swift
+//  r3pi
 //
-//  Created by Nazar on 14/07/2017.
+//  Created by Nazar on 30/07/2017.
 //  Copyright © 2017 Nazariy Bohun. All rights reserved.
 //
 
@@ -10,55 +11,36 @@ import Foundation
 
 class Database
 {
-    /*
-    static let realm = try! Realm()
-    
-    /// MARK Save/Create Entity
-    class func saveEntities(entities: [Object])
-    {
-        try! realm.write {
-            realm.add(entities, update: true)
-        }
-    }
-    
-    
-    /// MARK Delete Entitie
-    class func deleteEntitie(entity: Object)
-    {
-        try! realm.write {
-            realm.delete(entity)
-        }
-    }
-    
-    
-    // MARK fetch DATA
-    class func getAllFavorites() -> [ModelImage]
-    {
-        return realm.objects(ModelImage.self).sorted(byKeyPath: "id", ascending: false).map{$0}
-    }
-    
-    class func getFavoriteByID(modelID:String) -> ModelImage?
-    {
-        return realm.objects(ModelImage.self).filter("id == '\(modelID)'").sorted(byKeyPath: "id", ascending: false).map{$0}.first
-    }
-    
-    // we have to do it almost manually since REALM doesn't allow multi threading and we only can read / save / change on the save thread.
-    class func updateImageLocalIDWithThreadSafe(modelID: String, localID:String)
-    {
-        DispatchQueue(label: "realm_id_thread").sync {
-            let realm = try! Realm()
-            
-            let mImage = realm.objects(ModelImage.self).filter("id == '\(modelID)'").sorted(byKeyPath: "id", ascending: false).map{$0}.first
-            
-            if let entity = mImage {
-                try! realm.write {
-                    entity.localID = localID
-                    realm.add(entity, update: true)
+    //retriev data from PLIST. Should be ONLY used durong the APP init
+    class func getAllDataFromPlist() -> [ProductModel] {
+        var products = [ProductModel]()
+        if let URL = Bundle.main.url(forResource: "products", withExtension: "plist") {
+            if let productsFromPlist = NSArray(contentsOf: URL) {
+                for dictionary in productsFromPlist {
+                    let product = ProductModel(dictionary: dictionary as! NSDictionary)
+                    products.append(product)
                 }
             }
-
         }
+        return products
     }
-    */
+    
+    
+    //save all data into NS USER DEFAULTS
+    class func saveAllData()
+    {
+        
+    }
+    
+    
+    //retriev all data into NS USER DEFAULTS
+    class func fetchAllData()
+    {
+        
+    }
+    
+    
+    func convertProductModelToDictionary(product:ProductModel) -> NSDictionary {
+        return NSDictionary()
+    }
 }
-

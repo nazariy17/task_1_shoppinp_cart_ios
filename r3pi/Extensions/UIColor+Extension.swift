@@ -1,8 +1,8 @@
 //
 //  UIColor+Extension.swift
-//  Gini
+//  r3pi
 //
-//  Created by Nazar on 14/07/2017.
+//  Created by Nazar on 30/07/2017.
 //  Copyright © 2017 Nazariy Bohun. All rights reserved.
 //
 
@@ -10,8 +10,6 @@ import Foundation
 import UIKit
 
 // Inside this section I group all extension I do for default Classes.. like this example.
-// I commented the code since it has no pratical usage
-
 
 extension UIColor
 {
