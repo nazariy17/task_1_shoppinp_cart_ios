@@ -12,14 +12,13 @@ class NetworkAPI
 {
     let curencyServiceURL = "http://www.apilayer.net/api/live?format=1"
     let currencyApiKey = "445b7568e43d6b8c4ce93a15951f8aea"
-    var data = [[String:Any]]()
     
-    func getCurrencyList()
+    func getCurrencyList( callback: (([String:Any])->())? )
     {
         let fullStringURL = "\(curencyServiceURL)&access_key=\(currencyApiKey)"
-        if let url = URL(string: fullStringURL) {
         
-            URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
+        if let url = URL(string: fullStringURL) {
+            let task = URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
                 if (error != nil)
                 {
                     print("Error: \(error.debugDescription)")
@@ -27,8 +26,11 @@ class NetworkAPI
                 else
                 {
                     do {
-                        self.data = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! [[String:Any]]
-                        print("Self.data: ",self.data)
+                        let responseData = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! [String:Any]
+                        
+                        OperationQueue.main.addOperation {
+                            callback?(responseData)
+                        }
                     }
                     catch let error as NSError
                     {
@@ -36,7 +38,8 @@ class NetworkAPI
                     }
                 }
             })
-        
+            
+            task.resume()
         /* RESPONSE
             {
                 success: true,

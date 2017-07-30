@@ -17,6 +17,16 @@ extension CurrencyListViewController
     
     func preFetchCurrencyData()
     {
-        
+        intFetchCurrencyData()
+    }
+}
+
+extension CurrencyListViewController
+{
+    //this extension just to separate channels of communication
+    
+    func sendDataToView(data:[CurrencyModel])
+    {
+        updateView(data: data)
     }
 }
