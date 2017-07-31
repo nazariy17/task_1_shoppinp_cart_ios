@@ -11,8 +11,15 @@ import UIKit
 class ProductCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet var quantity: UILabel!
-    @IBOutlet var image: UIImageView!
+    @IBOutlet var imageView: UIImageView!
     @IBOutlet var name: UILabel!
     @IBOutlet var unit: UILabel!
     
+    //usually I would use some struct.. but in this case I will go with Model itself
+    func setup(product:ProductModel) {
+        imageView.image = UIImage(named: product.image)
+        name.text = product.name
+        unit.text = product.unit
+        quantity.text = product.quantity
+    }
 }

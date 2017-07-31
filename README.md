@@ -21,9 +21,11 @@
 
 ***** Description *****
 The app is based on Viper Arquitecture. Not an original version of VIPER (I think the original one can cause more harm than good) but still, Interactor and Presnter are there and we still have SOLID approach.
-Besides VIPER, app has delegates, notifications, singleton pattern as well.
-The data is saved via Models Classes and has a limited life cycle (only persist while app is running)
-For Internet connection app counts on <+++>
+Besides VIPER, app count on delegates and singleton pattern as well.
+The data is saved via Models Classes and has a limited life cycle (only persist while app is running).
+App counts heavely on delegates in order to propagate the data and update view.
+An alternative could be a usage of Core Data or REALM with Notification. I would prefer this REALM & NotificationCenter approach.
+For Internet connection app counts on URLSession (check networkAPI.swift)
 
 Usually I develop apps using 3pass approach.
 1º - layout, animations and functionalities (nothing related to the network call)
@@ -35,10 +37,12 @@ Popup is build with native iOS Interface Builder and classes.
 
 
 
+
 ***** UI *****
 I decided to build simple UI based on UI Collections and Table View with Popups.
 The approach is to use visual recogniton capabilities of human eyes, so we need to use icons and images whenever it applies.
 Some animation were used to create "fluid" effect and to enrich the user experience. Attention to the details is very important!
+
 
 
 

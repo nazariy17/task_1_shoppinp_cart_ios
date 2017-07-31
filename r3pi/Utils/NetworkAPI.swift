@@ -12,10 +12,11 @@ class NetworkAPI
 {
     let curencyServiceURL = "http://www.apilayer.net/api/live?format=1"
     let currencyApiKey = "445b7568e43d6b8c4ce93a15951f8aea"
+    let currencies = "currencies=CHF,EUR,GBP,CAD,PLN,UAH,CAD"
     
     func getCurrencyList( callback: (([String:Any])->())? )
     {
-        let fullStringURL = "\(curencyServiceURL)&access_key=\(currencyApiKey)"
+        let fullStringURL = "\(curencyServiceURL)&access_key=\(currencyApiKey)&\(currencies)"
         
         if let url = URL(string: fullStringURL) {
             let task = URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in

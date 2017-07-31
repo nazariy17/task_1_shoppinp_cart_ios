@@ -23,4 +23,14 @@ class CurrencyModel: NSObject
         self.name   = name
         self.value   = value
     }
+    
+    class func updatePriceForNewCurrency(oldPriceStr:String, currency:CurrencyModel) -> Double
+    {
+        if let oldPrice = Double(oldPriceStr), let currencyValue = Double(currency.value)
+        {
+            return oldPrice * currencyValue
+        }
+        
+        return 0
+    }
 }

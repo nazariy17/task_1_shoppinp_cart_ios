@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol CurrencyListViewControllerDelegate {
+    func updateCurrency(newCurrency:CurrencyModel)
+}
+
 class CurrencyListViewController: UIViewController {
     
     
@@ -15,6 +19,9 @@ class CurrencyListViewController: UIViewController {
     
     let reuseIdentifier = "CurrencyTableViewCell"
     var dataArray:[CurrencyModel] = [CurrencyModel]()
+    var selectedIndexRow:Int = -1
+    var delegate:CurrencyListViewControllerDelegate?
+    
     
     //pragma mark - VIEWS
     
@@ -39,15 +46,31 @@ class CurrencyListViewController: UIViewController {
     //pragma mark - ACTIONS
     
     @IBAction func doneWindowAction(_ sender: UIButton) {
+        if selectedIndexRow > -1
+        {
+            delegate?.updateCurrency(newCurrency: dataArray[selectedIndexRow])
+            closeWindow()
+        }
+        else
+        {
+            //use native alert view with complete handler
+            let alert = UIAlertController(title: "Currency", message: "Please, select a valid currency from the list. Thank you", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil ))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
     
     @IBAction func closeWindowAction(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
+        closeWindow()
     }
     
     
     //pragma mark - general
+    fileprivate func closeWindow()
+    {
+        self.dismiss(animated: true, completion: nil)
+    }
 
 }
 
@@ -69,18 +92,9 @@ extension CurrencyListViewController: UITableViewDataSource, UITableViewDelegate
         return cell
     }
     
+    
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        /*
-         selectedRowIndex = (indexPath as NSIndexPath).row
-         selectionAction?(selectedRowIndex!, dataSource[selectedRowIndex!])
-         
-         if let _ = anchorView as? UIBarButtonItem {
-         // DropDown's from UIBarButtonItem are menus so we deselect the selected menu right after selection
-         deselectRow(at: selectedRowIndex)
-         }
-         
-         hide()
-         */
+        selectedIndexRow = indexPath.row
     }
     
 }
