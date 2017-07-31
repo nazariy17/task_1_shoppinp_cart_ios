@@ -1,6 +1,7 @@
 # task_1_shoppinp_cart_ios
 
 ***** Briefing / Task *****
+
 1. Complete the task using the Swift language.
 2. 3rd party frameworks are not allowed.
 3. Unit tests are a good plus.
@@ -19,7 +20,9 @@
 
 
 
+
 ***** General Description *****
+
 The app is based on Viper Arquitecture. Not an original version of VIPER (I think the original one can cause more harm than good) but still, Interactor and Presnter are there and we still have SOLID approach.
 Besides VIPER, app count on delegates and singleton (loading screen) pattern as well.
 The data is saved via Models Classes and has a limited life cycle (only persist while app is running).
@@ -37,8 +40,11 @@ Popup is build with native iOS Interface Builder and classes.
 
 
 
+
+
 ***** Project Description *****
-The project has 4 different modules. The main one is ProductList. This Module has a variable called "dataArray" which is working as a basket.
+
+The project has 4 different modules (please, check the image provided with the project where I have initial prototype and simple Architecture). The main one is ProductList. This Module has a variable called "dataArray" which is working as a basket.
 As soon as you enter the app we will populate this was with all 4 products available at this moment.
 
 The quantity change is made inside Product Details Module. However, the changes are saved inside the mais module and once again inside the "dataArray". This way, if we want to add support for local data base it gonna be easy to do since our array already behave like it.
@@ -51,15 +57,23 @@ By the way, having any product in basket, product needs to have QUANTITY greater
 
 
 
+
+
+
 ***** UI *****
+
 I decided to build simple UI based on UI Collections and Table View with Popups.
 The approach is to use visual recogniton capabilities of human eyes, so we need to use icons and images whenever it applies.
 Some animation were used to create "fluid" effect and to enrich the user experience. Attention to the details is very important!
+I used R3PI colors and I have support for multi devices, although, I recommend to use with 6.
+If I could give more time to it I would do it perfect for all iPhones and iPad would have separate design for bigger screen
+
 
 
 
 
 ***** Known issue *****
+
 - App won't save the data in correct persistence way (using Realm or CD) - for this task I will use NSUserDefaults because of complexity and deadline. In normal comercial project I would go with REALM
 - The images of products are saved as an image asset, so in order to add more products besides we need to add it to the plist we need to add the image. This can be easily changed to cloud images.
 - I don't use any product ID since they make no sense with this task.
@@ -68,4 +82,5 @@ Some animation were used to create "fluid" effect and to enrich the user experie
 
 
 ***** Credits *****
+Briefing - R3PI - the best company :)
 close_icon - Dave Gandy
