@@ -60,6 +60,14 @@ By the way, having any product in a basket, a product needs to have QUANTITY gre
 
 
 
+***** UNIT TEST *****
+We have one test which will test our basket - the total quantity, the total price is USD and then it will test in 3 different currency.
+I would develop more tests in order to cover all possible failures
+
+
+
+
+
 ***** UI *****
 
 I decided to build simple UI based on UI Collections and Table View with Popups.
