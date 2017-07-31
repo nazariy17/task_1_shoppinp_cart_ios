@@ -73,7 +73,7 @@ class CheckoutViewController: UIViewController {
     
     @IBAction func confirmAndPayAction(_ sender: UIButton) {
         //use native alert view with complete handler
-        let alert = UIAlertController(title: "Confirmation", message: "Do you really want to make this purchise?", preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: "Confirmation", message: "Do you really want to make this purchase?", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Yes, I do!", style: UIAlertActionStyle.default, handler: { action in
             NotificationCenter.default.post(name: Notification.Name("clear_data"), object: nil)
             self.closeWindow()

@@ -23,6 +23,7 @@ class CheckoutTableViewCell: UITableViewCell {
         name.text = product.name
         unit.text = product.unit
         quantity.text = product.quantity
+        price.text = product.price
         
         if let doubleQuantity = Double(product.quantity), let doublePrice = Double(product.price)
         {

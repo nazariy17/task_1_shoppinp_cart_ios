@@ -27,7 +27,8 @@ class ProductModel: NSObject
             let image = dictionary["image"] as? String
             else {
                 print("Problem initializing the Product Model with dictionary: \(dictionary)")
-                return }
+                return
+        }
         
         self.id     = id
         self.name   = name

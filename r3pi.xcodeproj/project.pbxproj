@@ -40,6 +40,32 @@
 		78AF4AD61F2E768C00F171FC /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AD51F2E768C00F171FC /* String+Extension.swift */; };
 		78AF4AD81F2EB99500F171FC /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AD71F2EB99500F171FC /* UINavigationController+Extension.swift */; };
 		78AF4ADA1F2EC2CF00F171FC /* CustomLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AD91F2EC2CF00F171FC /* CustomLoader.swift */; };
+		78AF4ADF1F2F25A400F171FC /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4A771F2D0A2400F171FC /* ProductModel.swift */; };
+		78AF4AE01F2F25A700F171FC /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AD11F2E316F00F171FC /* CurrencyModel.swift */; };
+		78AF4AE21F2F260600F171FC /* BasketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AE11F2F260600F171FC /* BasketTests.swift */; };
+		78AF4AE31F2F26C800F171FC /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AB71F2DCA0200F171FC /* ProductListViewController.swift */; };
+		78AF4AE41F2F293F00F171FC /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AB91F2DCAE000F171FC /* ProductCollectionViewCell.swift */; };
+		78AF4AE51F2F294200F171FC /* ProductList+Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AA21F2D0BB000F171FC /* ProductList+Presenter.swift */; };
+		78AF4AE61F2F294600F171FC /* ProductList+Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AA41F2D0BBB00F171FC /* ProductList+Interactor.swift */; };
+		78AF4AE71F2F295700F171FC /* ProductDetails+Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AAA1F2D0BF100F171FC /* ProductDetails+Interactor.swift */; };
+		78AF4AE81F2F295A00F171FC /* ProductDetails+Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AA81F2D0BE100F171FC /* ProductDetails+Presenter.swift */; };
+		78AF4AE91F2F295A00F171FC /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AC31F2DD36000F171FC /* ProductDetailsViewController.swift */; };
+		78AF4AEA1F2F296200F171FC /* Checkout+Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AB01F2D0C3A00F171FC /* Checkout+Interactor.swift */; };
+		78AF4AEB1F2F296200F171FC /* Checkout+Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AB21F2D0C4500F171FC /* Checkout+Presenter.swift */; };
+		78AF4AEC1F2F296200F171FC /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4ABD1F2DCF3000F171FC /* CheckoutViewController.swift */; };
+		78AF4AED1F2F296200F171FC /* CheckoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AC11F2DD0C400F171FC /* CheckoutTableViewCell.swift */; };
+		78AF4AEE1F2F297700F171FC /* CurrencyList+Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AC81F2E0B6B00F171FC /* CurrencyList+Interactor.swift */; };
+		78AF4AEF1F2F297700F171FC /* CurrencyList+Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4ACA1F2E0B7700F171FC /* CurrencyList+Presenter.swift */; };
+		78AF4AF01F2F297700F171FC /* CurrencyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AC61F2E0B5E00F171FC /* CurrencyListViewController.swift */; };
+		78AF4AF11F2F297700F171FC /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4ACD1F2E0BB700F171FC /* CurrencyTableViewCell.swift */; };
+		78AF4AF21F2F298300F171FC /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4A7A1F2D0A2400F171FC /* CustomTextField.swift */; };
+		78AF4AF31F2F298300F171FC /* CustomLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AD91F2EC2CF00F171FC /* CustomLoader.swift */; };
+		78AF4AF41F2F298300F171FC /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4A751F2D0A2400F171FC /* UIColor+Extension.swift */; };
+		78AF4AF51F2F298300F171FC /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AD51F2E768C00F171FC /* String+Extension.swift */; };
+		78AF4AF61F2F298300F171FC /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AD71F2EB99500F171FC /* UINavigationController+Extension.swift */; };
+		78AF4AF71F2F298A00F171FC /* NetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AD31F2E320300F171FC /* NetworkAPI.swift */; };
+		78AF4AF81F2F298A00F171FC /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4A7E1F2D0A2400F171FC /* Database.swift */; };
+		78AF4AF91F2F298A00F171FC /* MyAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4A7F1F2D0A2400F171FC /* MyAlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +125,7 @@
 		78AF4AD51F2E768C00F171FC /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		78AF4AD71F2EB99500F171FC /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
 		78AF4AD91F2EC2CF00F171FC /* CustomLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLoader.swift; sourceTree = "<group>"; };
+		78AF4AE11F2F260600F171FC /* BasketTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +192,7 @@
 		786DBFF41F2D08F00090EF99 /* r3piTests */ = {
 			isa = PBXGroup;
 			children = (
+				78AF4AE11F2F260600F171FC /* BasketTests.swift */,
 				786DBFF51F2D08F00090EF99 /* r3piTests.swift */,
 				786DBFF71F2D08F00090EF99 /* Info.plist */,
 			);
@@ -492,7 +520,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78AF4AEB1F2F296200F171FC /* Checkout+Presenter.swift in Sources */,
 				786DBFF61F2D08F00090EF99 /* r3piTests.swift in Sources */,
+				78AF4AE21F2F260600F171FC /* BasketTests.swift in Sources */,
+				78AF4AF91F2F298A00F171FC /* MyAlertView.swift in Sources */,
+				78AF4AF41F2F298300F171FC /* UIColor+Extension.swift in Sources */,
+				78AF4AED1F2F296200F171FC /* CheckoutTableViewCell.swift in Sources */,
+				78AF4AF21F2F298300F171FC /* CustomTextField.swift in Sources */,
+				78AF4AF31F2F298300F171FC /* CustomLoader.swift in Sources */,
+				78AF4AF01F2F297700F171FC /* CurrencyListViewController.swift in Sources */,
+				78AF4AE91F2F295A00F171FC /* ProductDetailsViewController.swift in Sources */,
+				78AF4AF11F2F297700F171FC /* CurrencyTableViewCell.swift in Sources */,
+				78AF4AEE1F2F297700F171FC /* CurrencyList+Interactor.swift in Sources */,
+				78AF4AF61F2F298300F171FC /* UINavigationController+Extension.swift in Sources */,
+				78AF4AE61F2F294600F171FC /* ProductList+Interactor.swift in Sources */,
+				78AF4AF51F2F298300F171FC /* String+Extension.swift in Sources */,
+				78AF4AEF1F2F297700F171FC /* CurrencyList+Presenter.swift in Sources */,
+				78AF4AE51F2F294200F171FC /* ProductList+Presenter.swift in Sources */,
+				78AF4AF71F2F298A00F171FC /* NetworkAPI.swift in Sources */,
+				78AF4AEC1F2F296200F171FC /* CheckoutViewController.swift in Sources */,
+				78AF4AE71F2F295700F171FC /* ProductDetails+Interactor.swift in Sources */,
+				78AF4AE81F2F295A00F171FC /* ProductDetails+Presenter.swift in Sources */,
+				78AF4AE31F2F26C800F171FC /* ProductListViewController.swift in Sources */,
+				78AF4AEA1F2F296200F171FC /* Checkout+Interactor.swift in Sources */,
+				78AF4ADF1F2F25A400F171FC /* ProductModel.swift in Sources */,
+				78AF4AE41F2F293F00F171FC /* ProductCollectionViewCell.swift in Sources */,
+				78AF4AF81F2F298A00F171FC /* Database.swift in Sources */,
+				78AF4AE01F2F25A700F171FC /* CurrencyModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,6 +690,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				INFOPLIST_FILE = r3pi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.r3pi.r3pi;
@@ -648,6 +703,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				INFOPLIST_FILE = r3pi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.r3pi.r3pi;
@@ -660,7 +716,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/r3pi.app/r3pi";
 				INFOPLIST_FILE = r3piTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.r3pi.r3piTests;

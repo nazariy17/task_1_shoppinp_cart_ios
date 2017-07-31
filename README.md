@@ -19,7 +19,7 @@
 
 
 
-***** Description *****
+***** General Description *****
 The app is based on Viper Arquitecture. Not an original version of VIPER (I think the original one can cause more harm than good) but still, Interactor and Presnter are there and we still have SOLID approach.
 Besides VIPER, app count on delegates and singleton (loading screen) pattern as well.
 The data is saved via Models Classes and has a limited life cycle (only persist while app is running).
@@ -37,6 +37,19 @@ Popup is build with native iOS Interface Builder and classes.
 
 
 
+***** Project Description *****
+The project has 4 different modules. The main one is ProductList. This Module has a variable called "dataArray" which is working as a basket.
+As soon as you enter the app we will populate this was with all 4 products available at this moment.
+
+The quantity change is made inside Product Details Module. However, the changes are saved inside the mais module and once again inside the "dataArray". This way, if we want to add support for local data base it gonna be easy to do since our array already behave like it.
+
+The changes regarding the currency doesn't affect our main dataArray since we only care about price in USD and the new currency.
+However, Checkout Module has an ability to "reset" our dataArray everytime we click on "Confirm and Pay"
+
+Checout just have very simple validation. If user tries to open this module without having any product in basket, alert view will appear and app will close the checout module.
+By the way, having any product in basket, product needs to have QUANTITY greater that 0. Only those products will appear inside Checout module, all other are ignored.
+
+
 
 ***** UI *****
 I decided to build simple UI based on UI Collections and Table View with Popups.
@@ -50,7 +63,7 @@ Some animation were used to create "fluid" effect and to enrich the user experie
 - App won't save the data in correct persistence way (using Realm or CD) - for this task I will use NSUserDefaults because of complexity and deadline. In normal comercial project I would go with REALM
 - The images of products are saved as an image asset, so in order to add more products besides we need to add it to the plist we need to add the image. This can be easily changed to cloud images.
 - I don't use any product ID since they make no sense with this task.
-
+- everytime we open CHECKOUT module, we start with USD currency.
 
 
 

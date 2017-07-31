@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import r3pi
 
 class r3piUITests: XCTestCase {
         
@@ -28,9 +29,8 @@ class r3piUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testAddProdct() {
+        
     }
     
 }

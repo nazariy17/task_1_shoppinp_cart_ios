@@ -57,7 +57,7 @@ class ProductListViewController: UIViewController {
     
     
     //pragma mark - general
-    fileprivate func updateHeader()
+    func updateHeader()
     {
         let headerValues = ProductModel.getTotalPriceinUSD(products: dataArray)
         
