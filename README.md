@@ -21,7 +21,7 @@
 
 ***** Description *****
 The app is based on Viper Arquitecture. Not an original version of VIPER (I think the original one can cause more harm than good) but still, Interactor and Presnter are there and we still have SOLID approach.
-Besides VIPER, app count on delegates and singleton pattern as well.
+Besides VIPER, app count on delegates and singleton (loading screen) pattern as well.
 The data is saved via Models Classes and has a limited life cycle (only persist while app is running).
 App counts heavely on delegates in order to propagate the data and update view.
 An alternative could be a usage of Core Data or REALM with Notification. I would prefer this REALM & NotificationCenter approach.

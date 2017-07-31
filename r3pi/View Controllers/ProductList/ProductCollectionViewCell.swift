@@ -17,9 +17,14 @@ class ProductCollectionViewCell: UICollectionViewCell {
     
     //usually I would use some struct.. but in this case I will go with Model itself
     func setup(product:ProductModel) {
+        imageView.alpha = 0
         imageView.image = UIImage(named: product.image)
         name.text = product.name
         unit.text = product.unit
         quantity.text = product.quantity
+        
+        UIView.animate(withDuration: 1, animations: {
+            self.imageView.alpha = 1
+        }, completion: nil)
     }
 }

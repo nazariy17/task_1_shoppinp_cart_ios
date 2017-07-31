@@ -18,6 +18,7 @@ class ProductDetailsViewController: UIViewController {
     @IBOutlet var name: UILabel!
     @IBOutlet var unit: UILabel!
     @IBOutlet var quantity: UILabel!
+    @IBOutlet var applyBtn: UIButton!
     
     var productData:ProductModel?
     var newQuantity:Int = 0
@@ -50,6 +51,12 @@ class ProductDetailsViewController: UIViewController {
             
             if let currentQuantity = Int(product.quantity) { newQuantity = currentQuantity }
         }
+        
+        
+        applyBtn.alpha = 0
+        UIView.animate(withDuration: 2, animations: {
+            self.applyBtn.alpha = 1
+        }, completion: nil)
     }
 
     

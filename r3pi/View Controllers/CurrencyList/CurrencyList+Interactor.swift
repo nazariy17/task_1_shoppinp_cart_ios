@@ -15,6 +15,8 @@ extension CurrencyListViewController
     
     func intFetchCurrencyData()
     {
+        CustomLoader.sharedInstance.showLoader(parent: self.view)
+        
         let networkAPI = NetworkAPI()
         networkAPI.getCurrencyList(callback: { (result) -> Void in
             
@@ -35,6 +37,7 @@ extension CurrencyListViewController
                 resultArray.append(tmpCurrenceModel)
             }
             
+            CustomLoader.sharedInstance.hideLoader()
             self.sendDataToView(data: resultArray)
         })
     }

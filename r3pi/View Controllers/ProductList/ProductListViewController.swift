@@ -27,14 +27,29 @@ class ProductListViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        NotificationCenter.default.removeObserver(self, name: Notification.Name("clear_data"), object: nil)
     }
     
     
     //pragma mark - INIT
-    func setup()
+    fileprivate func setup()
     {
+        checkoutBtn.alpha = 0
+        UIView.animate(withDuration: 2, animations: {
+            self.checkoutBtn.alpha = 1
+        }, completion: nil)
+        
         preFetchCurrencyData()
+        setupNotifications()
+    }
+    
+    fileprivate func setupNotifications()
+    {
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(self.preClearAllData),
+            name: Notification.Name("clear_data"),
+            object: nil)
     }
     
     

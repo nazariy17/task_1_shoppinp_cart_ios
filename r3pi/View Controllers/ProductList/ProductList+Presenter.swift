@@ -40,6 +40,11 @@ extension ProductListViewController
         
         return resultArray
     }
+    
+    func preClearAllData()
+    {
+        intFetchCurrencyData()
+    }
 }
 
 extension ProductListViewController

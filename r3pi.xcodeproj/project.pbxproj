@@ -39,6 +39,7 @@
 		78AF4AD41F2E320300F171FC /* NetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AD31F2E320300F171FC /* NetworkAPI.swift */; };
 		78AF4AD61F2E768C00F171FC /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AD51F2E768C00F171FC /* String+Extension.swift */; };
 		78AF4AD81F2EB99500F171FC /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AD71F2EB99500F171FC /* UINavigationController+Extension.swift */; };
+		78AF4ADA1F2EC2CF00F171FC /* CustomLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AD91F2EC2CF00F171FC /* CustomLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		78AF4AD31F2E320300F171FC /* NetworkAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkAPI.swift; sourceTree = "<group>"; };
 		78AF4AD51F2E768C00F171FC /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		78AF4AD71F2EB99500F171FC /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
+		78AF4AD91F2EC2CF00F171FC /* CustomLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 		78AF4A7B1F2D0A2400F171FC /* UIElements */ = {
 			isa = PBXGroup;
 			children = (
+				78AF4AD91F2EC2CF00F171FC /* CustomLoader.swift */,
 			);
 			path = UIElements;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 				78AF4AC41F2DD36000F171FC /* ProductDetailsViewController.swift in Sources */,
 				78AF4AD61F2E768C00F171FC /* String+Extension.swift in Sources */,
 				78AF4AA51F2D0BBB00F171FC /* ProductList+Interactor.swift in Sources */,
+				78AF4ADA1F2EC2CF00F171FC /* CustomLoader.swift in Sources */,
 				78AF4AB11F2D0C3A00F171FC /* Checkout+Interactor.swift in Sources */,
 				78AF4AA31F2D0BB000F171FC /* ProductList+Presenter.swift in Sources */,
 				78AF4AC21F2DD0C400F171FC /* CheckoutTableViewCell.swift in Sources */,
