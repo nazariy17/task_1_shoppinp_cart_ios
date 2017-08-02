@@ -87,6 +87,7 @@ If I could give more time to it I would do it perfect for all iPhones and iPad w
 - The images of products are saved as an image asset, so in order to add more products besides we need to add it to the plist, we need to add the image. This can be easily changed to cloud images.
 - I don't use any product ID since they make no sense with this task.
 - everytime we open CHECKOUT module, we start with USD currency.
+- App require internet connection to show more currencies
 
 
 
