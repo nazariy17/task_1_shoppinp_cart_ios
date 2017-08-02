@@ -20,10 +20,17 @@ extension CurrencyListViewController
         let networkAPI = NetworkAPI()
         networkAPI.getCurrencyList(callback: { (result) -> Void in
             
+            if result.count<1 {
+                //Shwo alert screen with error! and stop execution - error case - we definitelly should handle this error in proper way
+                CustomLoader.sharedInstance.hideLoader()
+                return
+            }
+            
             let boolResult = result["success"] as! Bool
             if !boolResult {
-                print("ERROR - boolResult")
+                print("ERROR - \(boolResult)")
                 //Shwo alert screen with error!
+                CustomLoader.sharedInstance.hideLoader()
                 return
             }
             

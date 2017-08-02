@@ -22,7 +22,12 @@ class NetworkAPI
             let task = URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
                 if (error != nil)
                 {
+                    //we should handle this error in more proper way
                     print("Error: \(error.debugDescription)")
+                    
+                    OperationQueue.main.addOperation {
+                        callback?([String:Any]())
+                    }
                 }
                 else
                 {
@@ -35,7 +40,12 @@ class NetworkAPI
                     }
                     catch let error as NSError
                     {
+                        //we should handle this error in more proper way
                         print("Error: \(error.debugDescription)")
+                        
+                        OperationQueue.main.addOperation {
+                            callback?([String:Any]())
+                        }
                     }
                 }
             })
