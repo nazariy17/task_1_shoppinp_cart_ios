@@ -39,6 +39,7 @@ class CurrencyListViewController: UIViewController {
     //pragma mark - INIT
     func setup()
     {
+        CustomLoader.sharedInstance.showLoader(parent: self.view)
         preFetchCurrencyData()
     }
     
@@ -104,6 +105,20 @@ extension CurrencyListViewController {
     
     func updateView(data:[CurrencyModel])
     {
+        CustomLoader.sharedInstance.hideLoader()
+        if data.count < 1
+        {
+            
+            //use native alert view with complete handler
+            let alert = UIAlertController(title: "Notification", message: "It seems like you have no internet connection. Please, try again later.", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: { action in
+                self.closeWindow()
+            }))
+            self.present(alert, animated: true, completion: nil)
+            
+            return
+        }
+        
         dataArray.removeAll()
         dataArray = data
         tableView.reloadData()

@@ -15,14 +15,13 @@ extension CurrencyListViewController
     
     func intFetchCurrencyData()
     {
-        CustomLoader.sharedInstance.showLoader(parent: self.view)
-        
         let networkAPI = NetworkAPI()
         networkAPI.getCurrencyList(callback: { (result) -> Void in
             
             if result.count<1 {
+                print("ERROR - No internet connection")
                 //Shwo alert screen with error! and stop execution - error case - we definitelly should handle this error in proper way
-                CustomLoader.sharedInstance.hideLoader()
+                self.sendDataToView(data: [CurrencyModel]())
                 return
             }
             
@@ -30,7 +29,7 @@ extension CurrencyListViewController
             if !boolResult {
                 print("ERROR - \(boolResult)")
                 //Shwo alert screen with error!
-                CustomLoader.sharedInstance.hideLoader()
+                self.sendDataToView(data: [CurrencyModel]())
                 return
             }
             
@@ -44,7 +43,6 @@ extension CurrencyListViewController
                 resultArray.append(tmpCurrenceModel)
             }
             
-            CustomLoader.sharedInstance.hideLoader()
             self.sendDataToView(data: resultArray)
         })
     }
