@@ -17,13 +17,8 @@
 		78AF4A8D1F2D0A2400F171FC /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4A771F2D0A2400F171FC /* ProductModel.swift */; };
 		78AF4A8F1F2D0A2400F171FC /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4A7A1F2D0A2400F171FC /* CustomTextField.swift */; };
 		78AF4A911F2D0A2400F171FC /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4A7E1F2D0A2400F171FC /* Database.swift */; };
-		78AF4A921F2D0A2400F171FC /* MyAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4A7F1F2D0A2400F171FC /* MyAlertView.swift */; };
 		78AF4AA31F2D0BB000F171FC /* ProductList+Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AA21F2D0BB000F171FC /* ProductList+Presenter.swift */; };
 		78AF4AA51F2D0BBB00F171FC /* ProductList+Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AA41F2D0BBB00F171FC /* ProductList+Interactor.swift */; };
-		78AF4AA91F2D0BE100F171FC /* ProductDetails+Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AA81F2D0BE100F171FC /* ProductDetails+Presenter.swift */; };
-		78AF4AAB1F2D0BF100F171FC /* ProductDetails+Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AAA1F2D0BF100F171FC /* ProductDetails+Interactor.swift */; };
-		78AF4AB11F2D0C3A00F171FC /* Checkout+Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AB01F2D0C3A00F171FC /* Checkout+Interactor.swift */; };
-		78AF4AB31F2D0C4500F171FC /* Checkout+Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AB21F2D0C4500F171FC /* Checkout+Presenter.swift */; };
 		78AF4AB81F2DCA0200F171FC /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AB71F2DCA0200F171FC /* ProductListViewController.swift */; };
 		78AF4ABA1F2DCAE000F171FC /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AB91F2DCAE000F171FC /* ProductCollectionViewCell.swift */; };
 		78AF4ABE1F2DCF3000F171FC /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4ABD1F2DCF3000F171FC /* CheckoutViewController.swift */; };
@@ -32,7 +27,6 @@
 		78AF4AC71F2E0B5E00F171FC /* CurrencyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AC61F2E0B5E00F171FC /* CurrencyListViewController.swift */; };
 		78AF4AC91F2E0B6B00F171FC /* CurrencyList+Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AC81F2E0B6B00F171FC /* CurrencyList+Interactor.swift */; };
 		78AF4ACB1F2E0B7700F171FC /* CurrencyList+Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4ACA1F2E0B7700F171FC /* CurrencyList+Presenter.swift */; };
-		78AF4ACE1F2E0BB700F171FC /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4ACD1F2E0BB700F171FC /* CurrencyTableViewCell.swift */; };
 		78AF4AD01F2E0D7D00F171FC /* products.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78AF4ACF1F2E0D7D00F171FC /* products.plist */; };
 		78AF4AD21F2E316F00F171FC /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AD11F2E316F00F171FC /* CurrencyModel.swift */; };
 		78AF4AD41F2E320300F171FC /* NetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AD31F2E320300F171FC /* NetworkAPI.swift */; };
@@ -46,17 +40,12 @@
 		78AF4AE41F2F293F00F171FC /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AB91F2DCAE000F171FC /* ProductCollectionViewCell.swift */; };
 		78AF4AE51F2F294200F171FC /* ProductList+Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AA21F2D0BB000F171FC /* ProductList+Presenter.swift */; };
 		78AF4AE61F2F294600F171FC /* ProductList+Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AA41F2D0BBB00F171FC /* ProductList+Interactor.swift */; };
-		78AF4AE71F2F295700F171FC /* ProductDetails+Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AAA1F2D0BF100F171FC /* ProductDetails+Interactor.swift */; };
-		78AF4AE81F2F295A00F171FC /* ProductDetails+Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AA81F2D0BE100F171FC /* ProductDetails+Presenter.swift */; };
 		78AF4AE91F2F295A00F171FC /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AC31F2DD36000F171FC /* ProductDetailsViewController.swift */; };
-		78AF4AEA1F2F296200F171FC /* Checkout+Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AB01F2D0C3A00F171FC /* Checkout+Interactor.swift */; };
-		78AF4AEB1F2F296200F171FC /* Checkout+Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AB21F2D0C4500F171FC /* Checkout+Presenter.swift */; };
 		78AF4AEC1F2F296200F171FC /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4ABD1F2DCF3000F171FC /* CheckoutViewController.swift */; };
 		78AF4AED1F2F296200F171FC /* CheckoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AC11F2DD0C400F171FC /* CheckoutTableViewCell.swift */; };
 		78AF4AEE1F2F297700F171FC /* CurrencyList+Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AC81F2E0B6B00F171FC /* CurrencyList+Interactor.swift */; };
 		78AF4AEF1F2F297700F171FC /* CurrencyList+Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4ACA1F2E0B7700F171FC /* CurrencyList+Presenter.swift */; };
 		78AF4AF01F2F297700F171FC /* CurrencyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AC61F2E0B5E00F171FC /* CurrencyListViewController.swift */; };
-		78AF4AF11F2F297700F171FC /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4ACD1F2E0BB700F171FC /* CurrencyTableViewCell.swift */; };
 		78AF4AF21F2F298300F171FC /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4A7A1F2D0A2400F171FC /* CustomTextField.swift */; };
 		78AF4AF31F2F298300F171FC /* CustomLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AD91F2EC2CF00F171FC /* CustomLoader.swift */; };
 		78AF4AF41F2F298300F171FC /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4A751F2D0A2400F171FC /* UIColor+Extension.swift */; };
@@ -64,7 +53,6 @@
 		78AF4AF61F2F298300F171FC /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AD71F2EB99500F171FC /* UINavigationController+Extension.swift */; };
 		78AF4AF71F2F298A00F171FC /* NetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4AD31F2E320300F171FC /* NetworkAPI.swift */; };
 		78AF4AF81F2F298A00F171FC /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4A7E1F2D0A2400F171FC /* Database.swift */; };
-		78AF4AF91F2F298A00F171FC /* MyAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF4A7F1F2D0A2400F171FC /* MyAlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,13 +89,8 @@
 		78AF4A771F2D0A2400F171FC /* ProductModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		78AF4A7A1F2D0A2400F171FC /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		78AF4A7E1F2D0A2400F171FC /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
-		78AF4A7F1F2D0A2400F171FC /* MyAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAlertView.swift; sourceTree = "<group>"; };
 		78AF4AA21F2D0BB000F171FC /* ProductList+Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProductList+Presenter.swift"; sourceTree = "<group>"; };
 		78AF4AA41F2D0BBB00F171FC /* ProductList+Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProductList+Interactor.swift"; sourceTree = "<group>"; };
-		78AF4AA81F2D0BE100F171FC /* ProductDetails+Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProductDetails+Presenter.swift"; sourceTree = "<group>"; };
-		78AF4AAA1F2D0BF100F171FC /* ProductDetails+Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProductDetails+Interactor.swift"; sourceTree = "<group>"; };
-		78AF4AB01F2D0C3A00F171FC /* Checkout+Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Checkout+Interactor.swift"; sourceTree = "<group>"; };
-		78AF4AB21F2D0C4500F171FC /* Checkout+Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Checkout+Presenter.swift"; sourceTree = "<group>"; };
 		78AF4AB71F2DCA0200F171FC /* ProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		78AF4AB91F2DCAE000F171FC /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		78AF4ABD1F2DCF3000F171FC /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
@@ -116,7 +99,6 @@
 		78AF4AC61F2E0B5E00F171FC /* CurrencyListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyListViewController.swift; sourceTree = "<group>"; };
 		78AF4AC81F2E0B6B00F171FC /* CurrencyList+Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CurrencyList+Interactor.swift"; sourceTree = "<group>"; };
 		78AF4ACA1F2E0B7700F171FC /* CurrencyList+Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CurrencyList+Presenter.swift"; sourceTree = "<group>"; };
-		78AF4ACD1F2E0BB700F171FC /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
 		78AF4ACF1F2E0D7D00F171FC /* products.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = products.plist; sourceTree = "<group>"; };
 		78AF4AD11F2E316F00F171FC /* CurrencyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
 		78AF4AD31F2E320300F171FC /* NetworkAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkAPI.swift; sourceTree = "<group>"; };
@@ -246,7 +228,6 @@
 			children = (
 				78AF4AD31F2E320300F171FC /* NetworkAPI.swift */,
 				78AF4A7E1F2D0A2400F171FC /* Database.swift */,
-				78AF4A7F1F2D0A2400F171FC /* MyAlertView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -284,8 +265,6 @@
 		78AF4A9D1F2D0B7800F171FC /* Checkout */ = {
 			isa = PBXGroup;
 			children = (
-				78AF4AB01F2D0C3A00F171FC /* Checkout+Interactor.swift */,
-				78AF4AB21F2D0C4500F171FC /* Checkout+Presenter.swift */,
 				78AF4ABD1F2DCF3000F171FC /* CheckoutViewController.swift */,
 				78AF4AB41F2D0C5500F171FC /* CellView */,
 			);
@@ -295,8 +274,6 @@
 		78AF4A9E1F2D0B7800F171FC /* ProductDetails */ = {
 			isa = PBXGroup;
 			children = (
-				78AF4AAA1F2D0BF100F171FC /* ProductDetails+Interactor.swift */,
-				78AF4AA81F2D0BE100F171FC /* ProductDetails+Presenter.swift */,
 				78AF4AC31F2DD36000F171FC /* ProductDetailsViewController.swift */,
 			);
 			path = ProductDetails;
@@ -335,17 +312,8 @@
 				78AF4AC81F2E0B6B00F171FC /* CurrencyList+Interactor.swift */,
 				78AF4ACA1F2E0B7700F171FC /* CurrencyList+Presenter.swift */,
 				78AF4AC61F2E0B5E00F171FC /* CurrencyListViewController.swift */,
-				78AF4ACC1F2E0B8B00F171FC /* CellView */,
 			);
 			path = CurrencyList;
-			sourceTree = "<group>";
-		};
-		78AF4ACC1F2E0B8B00F171FC /* CellView */ = {
-			isa = PBXGroup;
-			children = (
-				78AF4ACD1F2E0BB700F171FC /* CurrencyTableViewCell.swift */,
-			);
-			name = CellView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -485,29 +453,23 @@
 			files = (
 				78AF4A8C1F2D0A2400F171FC /* UIColor+Extension.swift in Sources */,
 				78AF4ACB1F2E0B7700F171FC /* CurrencyList+Presenter.swift in Sources */,
-				78AF4AA91F2D0BE100F171FC /* ProductDetails+Presenter.swift in Sources */,
 				78AF4AD21F2E316F00F171FC /* CurrencyModel.swift in Sources */,
 				78AF4A8F1F2D0A2400F171FC /* CustomTextField.swift in Sources */,
 				78AF4AD81F2EB99500F171FC /* UINavigationController+Extension.swift in Sources */,
-				78AF4A921F2D0A2400F171FC /* MyAlertView.swift in Sources */,
 				78AF4AB81F2DCA0200F171FC /* ProductListViewController.swift in Sources */,
 				78AF4AC41F2DD36000F171FC /* ProductDetailsViewController.swift in Sources */,
 				78AF4AD61F2E768C00F171FC /* String+Extension.swift in Sources */,
 				78AF4AA51F2D0BBB00F171FC /* ProductList+Interactor.swift in Sources */,
 				78AF4ADA1F2EC2CF00F171FC /* CustomLoader.swift in Sources */,
-				78AF4AB11F2D0C3A00F171FC /* Checkout+Interactor.swift in Sources */,
 				78AF4AA31F2D0BB000F171FC /* ProductList+Presenter.swift in Sources */,
 				78AF4AC21F2DD0C400F171FC /* CheckoutTableViewCell.swift in Sources */,
 				78AF4AC71F2E0B5E00F171FC /* CurrencyListViewController.swift in Sources */,
 				786DBFE11F2D08F00090EF99 /* AppDelegate.swift in Sources */,
 				78AF4A911F2D0A2400F171FC /* Database.swift in Sources */,
-				78AF4AB31F2D0C4500F171FC /* Checkout+Presenter.swift in Sources */,
 				78AF4AC91F2E0B6B00F171FC /* CurrencyList+Interactor.swift in Sources */,
 				78AF4A8D1F2D0A2400F171FC /* ProductModel.swift in Sources */,
 				78AF4ABA1F2DCAE000F171FC /* ProductCollectionViewCell.swift in Sources */,
-				78AF4AAB1F2D0BF100F171FC /* ProductDetails+Interactor.swift in Sources */,
 				78AF4ABE1F2DCF3000F171FC /* CheckoutViewController.swift in Sources */,
-				78AF4ACE1F2E0BB700F171FC /* CurrencyTableViewCell.swift in Sources */,
 				78AF4AD41F2E320300F171FC /* NetworkAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,17 +478,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78AF4AEB1F2F296200F171FC /* Checkout+Presenter.swift in Sources */,
 				786DBFF61F2D08F00090EF99 /* r3piTests.swift in Sources */,
 				78AF4AE21F2F260600F171FC /* BasketTests.swift in Sources */,
-				78AF4AF91F2F298A00F171FC /* MyAlertView.swift in Sources */,
 				78AF4AF41F2F298300F171FC /* UIColor+Extension.swift in Sources */,
 				78AF4AED1F2F296200F171FC /* CheckoutTableViewCell.swift in Sources */,
 				78AF4AF21F2F298300F171FC /* CustomTextField.swift in Sources */,
 				78AF4AF31F2F298300F171FC /* CustomLoader.swift in Sources */,
 				78AF4AF01F2F297700F171FC /* CurrencyListViewController.swift in Sources */,
 				78AF4AE91F2F295A00F171FC /* ProductDetailsViewController.swift in Sources */,
-				78AF4AF11F2F297700F171FC /* CurrencyTableViewCell.swift in Sources */,
 				78AF4AEE1F2F297700F171FC /* CurrencyList+Interactor.swift in Sources */,
 				78AF4AF61F2F298300F171FC /* UINavigationController+Extension.swift in Sources */,
 				78AF4AE61F2F294600F171FC /* ProductList+Interactor.swift in Sources */,
@@ -535,10 +494,7 @@
 				78AF4AE51F2F294200F171FC /* ProductList+Presenter.swift in Sources */,
 				78AF4AF71F2F298A00F171FC /* NetworkAPI.swift in Sources */,
 				78AF4AEC1F2F296200F171FC /* CheckoutViewController.swift in Sources */,
-				78AF4AE71F2F295700F171FC /* ProductDetails+Interactor.swift in Sources */,
-				78AF4AE81F2F295A00F171FC /* ProductDetails+Presenter.swift in Sources */,
 				78AF4AE31F2F26C800F171FC /* ProductListViewController.swift in Sources */,
-				78AF4AEA1F2F296200F171FC /* Checkout+Interactor.swift in Sources */,
 				78AF4ADF1F2F25A400F171FC /* ProductModel.swift in Sources */,
 				78AF4AE41F2F293F00F171FC /* ProductCollectionViewCell.swift in Sources */,
 				78AF4AF81F2F298A00F171FC /* Database.swift in Sources */,

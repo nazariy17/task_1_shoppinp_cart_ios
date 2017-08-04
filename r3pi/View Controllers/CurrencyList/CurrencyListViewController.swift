@@ -14,7 +14,6 @@ protocol CurrencyListViewControllerDelegate {
 
 class CurrencyListViewController: UIViewController {
     
-    
     @IBOutlet var tableView: UITableView!
     
     let reuseIdentifier = "CurrencyTableViewCell"
@@ -28,11 +27,6 @@ class CurrencyListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     
@@ -75,9 +69,8 @@ class CurrencyListViewController: UIViewController {
 
 }
 
+//pragma mark - Table View Delegates
 extension CurrencyListViewController: UITableViewDataSource, UITableViewDelegate {
-    
-    //pragma mark - Table View Delegates
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataArray.count
@@ -100,8 +93,9 @@ extension CurrencyListViewController: UITableViewDataSource, UITableViewDelegate
     
 }
 
+
+//Extention to make communication between Presenter and View
 extension CurrencyListViewController {
-    //Extention to make communication between Presenter and View
     
     func updateView(data:[CurrencyModel])
     {

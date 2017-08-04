@@ -25,11 +25,6 @@ class CheckoutViewController: UIViewController {
         super.viewDidLoad()
         setup()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     //pragma mark - INIT
     func setupData(products: [ProductModel])

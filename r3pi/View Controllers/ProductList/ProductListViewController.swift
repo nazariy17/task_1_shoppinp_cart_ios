@@ -52,10 +52,6 @@ class ProductListViewController: UIViewController {
             object: nil)
     }
     
-    
-    //pragma mark - ACTIONS
-    
-    
     //pragma mark - general
     func updateHeader()
     {
@@ -92,22 +88,17 @@ class ProductListViewController: UIViewController {
 }
 
 
-
+// MARK: - UICollectionViewDataSource protocol
 extension ProductListViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
-    // MARK: - UICollectionViewDataSource protocol
-    
-    // tell the collection view how many sections to make
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
-    // tell the collection view how many cells to make
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return dataArray.count
     }
     
-    // make a cell for each cell index path
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! ProductCollectionViewCell
@@ -140,6 +131,8 @@ extension ProductListViewController {
         collectionView.reloadData()
     }
 }
+
+
 
 extension ProductListViewController: ProductDetailsViewControllerDelegate {
     func updateQuantity(forProductId productId:String, newQuantity:String)

@@ -30,18 +30,13 @@ class ProductDetailsViewController: UIViewController {
         super.viewDidLoad()
         setup()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     func setupProductData(product:ProductModel)
     {
         productData = product
     }
     
-    func setup()
+    fileprivate func setup()
     {
         if let product = productData {
             name.text = product.name
@@ -99,7 +94,8 @@ class ProductDetailsViewController: UIViewController {
     }
     
     
-    //pragma mark - GEneral
+    
+    //pragma mark - General
     
     fileprivate func closeWindow()
     {
