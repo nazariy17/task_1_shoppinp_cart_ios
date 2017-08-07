@@ -3,7 +3,7 @@
 ***** Briefing / Task *****
 
 1. Complete the task using the Swift language.
-2. 3rd party frameworks are not allowed.
+2. 3rd party frameworks are not allowed. <---------
 3. Unit tests are a good plus.
 
 - Write a mobile application and associated unit tests that can price a basket of goods in a number of different currencies
@@ -63,7 +63,6 @@ By the way, having any product in a basket, a product needs to have QUANTITY gre
 ***** UNIT TEST *****
 
 We have one test which will test our basket - the total quantity, the total price is USD and then it will test in 3 different currency.
-I would develop more tests in order to cover all possible failures
 
 
 
@@ -74,7 +73,6 @@ I would develop more tests in order to cover all possible failures
 I decided to build simple UI based on UI Collections and Table View with Popups.
 The approach is to use visual recognition capabilities of human eyes, so we need to use icons and images whenever it applies.
 Some animation was used to create "fluid" effect and to enrich the user experience. Attention to the details is very important!
-I used R3PI colors and I have support for multi devices, although, I recommend to use with 6.
 If I could give more time to it I would do it perfect for all iPhones and iPad would have separate design for bigger screen
 
 
@@ -92,7 +90,5 @@ If I could give more time to it I would do it perfect for all iPhones and iPad w
 
 
 ***** Credits *****
-
-Briefing - R3PI - the best company :)
 
 close_icon - Dave Gandy
