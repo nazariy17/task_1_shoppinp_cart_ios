@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol ProductDetailsViewControllerDelegate {
+protocol ProductDetailsViewControllerDelegate: class {
     func updateQuantity(forProductId productId:String, newQuantity:String)
 }
 
@@ -22,7 +22,7 @@ class ProductDetailsViewController: UIViewController {
     
     var productData:ProductModel?
     var newQuantity:Int = 0
-    var delegate:ProductDetailsViewControllerDelegate?
+    weak var delegate:ProductDetailsViewControllerDelegate?
     
     //pragma mark - VIEWS
     

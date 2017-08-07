@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol CurrencyListViewControllerDelegate {
+protocol CurrencyListViewControllerDelegate: class {
     func updateCurrency(newCurrency:CurrencyModel)
 }
 
@@ -19,7 +19,7 @@ class CurrencyListViewController: UIViewController {
     let reuseIdentifier = "CurrencyTableViewCell"
     var dataArray:[CurrencyModel] = [CurrencyModel]()
     var selectedIndexRow:Int = -1
-    var delegate:CurrencyListViewControllerDelegate?
+    weak var delegate:CurrencyListViewControllerDelegate?
     
     
     //pragma mark - VIEWS
