@@ -23,7 +23,7 @@ class ProductCollectionViewCell: UICollectionViewCell {
         unit.text = product.unit
         quantity.text = product.quantity
         
-        UIView.animate(withDuration: 1, animations: {
+        UIView.animate(withDuration: 1, animations: { [unowned self] in
             self.imageView.alpha = 1
         }, completion: nil)
     }

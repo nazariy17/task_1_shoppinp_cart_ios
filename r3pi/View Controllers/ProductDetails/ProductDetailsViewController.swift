@@ -49,7 +49,7 @@ class ProductDetailsViewController: UIViewController {
         
         
         applyBtn.alpha = 0
-        UIView.animate(withDuration: 2, animations: {
+        UIView.animate(withDuration: 2, animations: { [unowned self] in
             self.applyBtn.alpha = 1
         }, completion: nil)
     }

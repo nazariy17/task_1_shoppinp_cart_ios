@@ -24,7 +24,7 @@ extension ProductListViewController
                 resultArray = Database.getAllDataFromPlist()
             }
             
-            OperationQueue.main.addOperation {
+            OperationQueue.main.addOperation { [unowned self] in
                 self.sendDataToView(data: resultArray)
             }
             
